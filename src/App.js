@@ -1,14 +1,14 @@
 import { useState } from "react";
-let i = 0
+
 export default function App() {
-  const [data, setData] = useState(i);
+  const [data, setData] = useState(0);
 
   function Increament() {
-    setData(i++)
+    setData(data+1)
   }
 
   function Decrement() {
-    setData(i--)
+    setData(data-1)
   }
 
   return (
